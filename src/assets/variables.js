@@ -27,7 +27,7 @@ const twitter =
 const instagram =
   "https://res.cloudinary.com/dgqyqd2pa/image/upload/v1695836858/App_figures-gym/instagram_lfo79n.svg";
 const pay = "https://res.cloudinary.com/dgqyqd2pa/image/upload/v1709299673/App_figures-gym/peso_ocnpck.svg"
-const mainImage = "https://res.cloudinary.com/dgqyqd2pa/image/upload/v1712596798/figures-training/woman_tb5qv9.webp" 
+const mainImage = "https://res.cloudinary.com/dgqyqd2pa/image/upload/v1712598975/figures-training/woman_tb5qv9-min_rdaqxz.jpg" 
 export {
   back,
   more,mainImage,

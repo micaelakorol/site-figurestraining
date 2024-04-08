@@ -25,7 +25,7 @@ const Image = styled.section`
   }
 `;
 const Information = styled.section`
-  font-family: "Epilogue", sans-serif;
+  font-family: inherit;
   margin-left: 10%;
   @media (max-width: 768px) {
     margin: 1rem;
