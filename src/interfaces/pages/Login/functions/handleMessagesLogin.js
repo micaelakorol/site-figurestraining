@@ -13,7 +13,6 @@ const HandleMessagesLogin = () => {
     dispatch(userIsLogged({ isLogged: true }));
     navigateRoute();
   };
-
   const handleWarningLogin = () => {
     showToast("You must verify the email to access", "warning");
     dispatch(loadingReducer({ loading: false }));

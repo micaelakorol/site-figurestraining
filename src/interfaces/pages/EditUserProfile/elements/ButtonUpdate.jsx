@@ -4,7 +4,7 @@ import { BtnUpdate } from "../../../../styles/Dashboard";
 const ButtonUpdate = () => {
   return (
     <BtnUpdate as="button" type="submit">
-      Update profile
+      Update
     </BtnUpdate>
   );
 };

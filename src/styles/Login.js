@@ -38,8 +38,8 @@ const Inputs = styled.input`
   padding: 0.7rem 0.6rem;
   width: 28%;
   margin: 0 0.5rem;
-  border: 1.5px solid black;
-  border-bottom: 3.5px solid black;
+  border: 1.5px solid ${Color.black};
+  border-bottom: 3.5px solid ${Color.black};
   outline: none;
   border-radius: 0.3rem;
 `;
@@ -47,17 +47,18 @@ const Inputs = styled.input`
 const BtnLogin = styled(ButtonNav)`
   width: 26%;
   padding: 0.5rem;
-  color: black;
-  border-color: black;
+  color: ${Color.black};;
+  border-color: ${Color.black};
   opacity: ${props => (props.disabled ? '.5' : 'none')};
   cursor: pointer;
   margin: 1rem auto;
   font-size: 0.9rem;
-  border-bottom: 3.5px solid black;
+  border: 1.5px solid ${Color.black};
+  border-bottom: 3.5px solid ${Color.black};
   font-weight: 600;
   &:hover {
     border: 1.5px solid transparent;
-    border-bottom: 3.5px solid black;
+    border-bottom: 3.5px solid ${Color.black};
   }
 `;
 

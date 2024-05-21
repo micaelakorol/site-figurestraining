@@ -12,9 +12,10 @@ import ButtonLoginReg from "../../reusable/ButtonLoginReg";
 import { useSelector } from "react-redux";
 import LoginForm from "./elements/LoginForm";
 import { HandleLogin } from "./functions/handleLogin";
+import Login from "./elements/LoginGoogle";
 
 const LoginRender = () => {
-  const { handleFormLogin } = HandleLogin()
+  const { handleFormLogin } = HandleLogin();
   const { loading, disabled } = useSelector((state) => state.loading);
 
   return (
@@ -32,6 +33,7 @@ const LoginRender = () => {
           <LinkReset to="/reset">
             Have you forgotten your password? Press HERE
           </LinkReset>
+          <Login />
           <BtnBack to="/" />
         </Form>
         <BtnSupport />

@@ -12,12 +12,12 @@ const Amenities = () => {
       <TitleAmenities>Our Amenities</TitleAmenities>
       <ContainerCard>
         {cardsAmenities.map((item) => (
-          <ul key={item.id}>
+          <div key={item.id}>
             <img src={item.img} alt={item.title} />
             <p>{item.title}</p>
-            <li>{item.description}</li>
+            <b>{item.description}</b>
             <Link to='/'>{item.button}</Link>
-          </ul>
+          </div>
         ))}
       </ContainerCard>
     </ContainerAmenities>

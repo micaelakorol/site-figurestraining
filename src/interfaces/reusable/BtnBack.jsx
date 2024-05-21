@@ -1,11 +1,11 @@
-import { ButtonNav } from "../../styles/Nav";
-import Back from "./Back";
+import { Link } from "react-router-dom";
+import { back } from "../../assets/variables";
 
 const BtnBack = ({ to }) => {
   return (
-    <ButtonNav to={to}>
-      <Back />
-    </ButtonNav>
+    <Link to={to}>
+      <img src={back} alt="icon-back" />
+    </Link>
   );
 };
 

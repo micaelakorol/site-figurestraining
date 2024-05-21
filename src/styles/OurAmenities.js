@@ -7,6 +7,7 @@ const ContainerAmenities = styled.section`
   padding: 1rem;
   width: 100%;
 `;
+
 const TitleAmenities = styled.h1`
   color: white;
   text-align: end;
@@ -16,23 +17,23 @@ const TitleAmenities = styled.h1`
   text-transform: uppercase;
 `;
 
-const ContainerCard = styled.article`
+const ContainerCard = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   p {
     margin-bottom: 0.8rem;
     text-transform: uppercase;
     color: ${Color.lemonade};
     font-weight: 500;
   }
-  ul {
+  div {
     font-size: 1rem;
     color: white;
     margin: 0 1rem;
     list-style: none;
     text-align: center;
   }
-  li {
+  b {
     font-weight: 300;
     font-size: 0.8rem;
   }
