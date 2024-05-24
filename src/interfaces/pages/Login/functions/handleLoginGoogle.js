@@ -12,7 +12,6 @@ export const HandleLoginGooogle = () => {
         const credential = GoogleAuthProvider.credentialFromResult(result);
         const token = credential.accessToken;
         const user = result.user;
-        console.log(user);
         if (!user) {
           handleWarningLogin();
         } else {
@@ -22,7 +21,6 @@ export const HandleLoginGooogle = () => {
       .catch((error) => {
         const credential = GoogleAuthProvider.credentialFromError(error);
         showToast(error.message, credential, "error");
-        // ...
       });
   };
   return { loginGoogle };

@@ -25,6 +25,7 @@ const LoginForm = () => {
         placeholder="******"
         value={password}
         required={true}
+        minLength={6}
         onChange={(e) => handleInput(e, fieldForm, setFieldForm)}
       />
     </>

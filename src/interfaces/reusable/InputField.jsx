@@ -6,13 +6,14 @@ export const InputField = ({
   onChange,
   placeholder,
   type,
-  required,
+  required,minLength
 }) => {
   return (
     <Inputs
       name={name}
       value={value}
       onChange={onChange}
+      minLength={minLength}
       placeholder={placeholder}
       type={type}
       required={required}
