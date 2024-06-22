@@ -51,7 +51,7 @@ const BtnLogin = styled(ButtonNav)`
   border-color: ${Color.black};
   opacity: ${props => (props.disabled ? '.5' : 'none')};
   cursor: pointer;
-  margin: 1rem auto;
+  margin: .5rem auto;
   font-size: 0.9rem;
   border: 1.5px solid ${Color.black};
   border-bottom: 3.5px solid ${Color.black};
@@ -79,7 +79,7 @@ const Banner = styled.section`
 const LinkReset = styled(Link)`
   text-decoration: underline;
   font-size: 0.8rem;
-  margin-bottom: 0.6rem;
+  margin: .6rem 0;
   color: ${Color.black};
 `;
 

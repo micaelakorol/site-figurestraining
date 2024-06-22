@@ -13,6 +13,7 @@ import { useSelector } from "react-redux";
 import LoginForm from "./elements/LoginForm";
 import { HandleLogin } from "./functions/handleLogin";
 import Login from "./elements/LoginGoogle";
+import { ButtonNav } from "../../../styles/Nav";
 
 const LoginRender = () => {
   const { handleFormLogin } = HandleLogin();
@@ -29,10 +30,12 @@ const LoginRender = () => {
           <ButtonLoginReg as="button" type="submit" disabled={disabled}>
             {loading ? "Loading..." : "Login"}
           </ButtonLoginReg>
+          <ButtonNav to="/demo">Demo</ButtonNav>
           <ToastContainer position="top-center" delay="100" />
           <LinkReset to="/reset">
             Have you forgotten your password? Press HERE
           </LinkReset>
+          {/** Login with google */}
           <Login />
           <BtnBack to="/" />
         </Form>
