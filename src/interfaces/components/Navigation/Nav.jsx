@@ -5,6 +5,7 @@ const Nav = () => {
     <Container>
       <Logo src={figuresLogoDesk} alt="logo-figures" />
       <nav>
+        <ButtonNav to="/demo">Demo</ButtonNav>
         <ButtonNav to="/login">Log in</ButtonNav>
         <ButtonNav to="/register">Sign up</ButtonNav>
       </nav>
