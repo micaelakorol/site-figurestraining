@@ -14,10 +14,12 @@ import LoginForm from "./elements/LoginForm";
 import { HandleLogin } from "./functions/handleLogin";
 import Login from "./elements/LoginGoogle";
 import { ButtonNav } from "../../../styles/Nav";
+import UserAnonymous from "./functions/userAnonymous";
 
 const LoginRender = () => {
   const { handleFormLogin } = HandleLogin();
   const { loading, disabled } = useSelector((state) => state.loading);
+  const { handleAnonymous } = UserAnonymous();
 
   return (
     <>
@@ -30,7 +32,10 @@ const LoginRender = () => {
           <ButtonLoginReg as="button" type="submit" disabled={disabled}>
             {loading ? "Loading..." : "Login"}
           </ButtonLoginReg>
-          <ButtonNav to="/demo">Demo</ButtonNav>
+
+          <ButtonNav onClick={handleAnonymous}>
+            Enter without logging in
+          </ButtonNav>
           <ToastContainer position="top-center" delay="100" />
           <LinkReset to="/reset">
             Have you forgotten your password? Press HERE

@@ -6,7 +6,7 @@ const PrivateRoutes = () => {
   return (
     <>
       {" "}
-      {user.emailVerified && user.isLogged ? (
+      {user.isLogged ? (
         <Outlet />
       ) : (
         <Navigate to="/login" />

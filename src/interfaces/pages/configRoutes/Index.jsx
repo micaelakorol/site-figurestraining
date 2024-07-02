@@ -9,7 +9,6 @@ import PrivateRoutes from "./PrivateRoutes";
 import UserProfile from "../EditUserProfile/UserProfile";
 import ResetPasswordForm from "../PasswordReset/ResetPasswordForm";
 import Payments from "../Payments/Payments";
-import Demo from "../Demo/Demo";
 export const router = createBrowserRouter([
   {
     errorElement: <Error />,
@@ -50,11 +49,7 @@ export const router = createBrowserRouter([
       {
         path: "/reset",
         element: <ResetPasswordForm />,
-      },
-      {
-        path: "/demo",
-        element: <Demo />,
-      },
+      }
     ],
   },
 ]);

@@ -5,10 +5,11 @@ import { currentUser, userIsLogged } from "../../../../redux/userSlice";
 export const SignOut = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const signOutSesion = () => {
+  const signOutSesion = async () => {
+
     dispatch(userIsLogged({ isLogged: false }));
-  dispatch(currentUser(null));
-  navigate("/");
-  }
-  return signOutSesion
+    dispatch(currentUser(undefined));
+    navigate("/");
+  };
+  return signOutSesion;
 };
