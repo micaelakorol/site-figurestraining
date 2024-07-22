@@ -12,7 +12,6 @@ import ButtonLoginReg from "../../reusable/ButtonLoginReg";
 import { useSelector } from "react-redux";
 import LoginForm from "./elements/LoginForm";
 import { HandleLogin } from "./functions/handleLogin";
-import Login from "./elements/LoginGoogle";
 import { ButtonNav } from "../../../styles/Nav";
 import UserAnonymous from "./functions/userAnonymous";
 
@@ -32,16 +31,13 @@ const LoginRender = () => {
           <ButtonLoginReg as="button" type="submit" disabled={disabled}>
             {loading ? "Loading..." : "Login"}
           </ButtonLoginReg>
-
+          <LinkReset to="/reset">
+            Have you forgotten your password? Press HERE
+          </LinkReset>
           <ButtonNav onClick={handleAnonymous}>
             Enter without logging in
           </ButtonNav>
           <ToastContainer position="top-center" delay="100" />
-          <LinkReset to="/reset">
-            Have you forgotten your password? Press HERE
-          </LinkReset>
-          {/** Login with google */}
-          <Login />
           <BtnBack to="/" />
         </Form>
         <BtnSupport />
