@@ -1,13 +1,12 @@
 import {
   ContainerPresentation,
   Information,
-  Image,
   Title,
   ButtonMoreInfo,
   Description,
 } from "../../../styles/Presentation";
 import Icons from "../../reusable/Icons";
-import { wsp, mainImage } from "../../../assets/variables";
+import { wsp } from "../../../assets/variables";
 const Presentation = () => {
   return (
     <ContainerPresentation>
@@ -26,10 +25,10 @@ const Presentation = () => {
           <Icons src={wsp} alt="whatsapp-icon" /> Chat with us!
         </ButtonMoreInfo>
       </Information>
-      {/* Section image presentation */}
+      {/* Section image presentation 
       <Image>
         <Icons src={mainImage} alt="woman-training" />
-      </Image>
+      </Image>*/}
     </ContainerPresentation>
   );
 };

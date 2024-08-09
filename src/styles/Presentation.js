@@ -2,28 +2,13 @@ import { styled } from "styled-components";
 import { Color } from "./Color";
 import { ButtonNav } from "./Nav";
 const ContainerPresentation = styled.main`
-  display: grid;
-  grid-template-columns: 50% 50%;
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-`;
-const Image = styled.section`
   display: flex;
   justify-content: center;
-  img {
-    width: 70%;
-    object-fit: contain;
-    height: 100%;
-    margin-right: 5%;
-    padding: 1rem;
-  }
-  @media (max-width: 768px) {
-    img {
-      margin: auto;
-    }
-  }
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
 `;
+
 const Information = styled.section`
   font-family: inherit;
   margin-left: 10%;
@@ -37,7 +22,7 @@ const Information = styled.section`
 const Title = styled.h1`
   font-size: 3.5rem;
   width: 75%;
-  margin: 8% 0 5% 0;
+  margin: 8% 0 2% 0;
   mark {
     background-color: ${Color.lemonade};
   }
@@ -54,15 +39,15 @@ const ButtonMoreInfo = styled(ButtonNav)`
 `;
 
 const Description = styled.p`
-  margin: 1rem 0 1.5rem 0;
-  text-align: justify;
+  margin: 1.55rem 0 1.8rem 0;
+  text-align: start;
+  width: 75%;
   font-size: 0.99rem;
 `;
 
 export {
   ContainerPresentation,
   Information,
-  Image,
   Title,
   ButtonMoreInfo,
   Description,

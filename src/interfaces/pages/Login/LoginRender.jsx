@@ -31,12 +31,12 @@ const LoginRender = () => {
           <ButtonLoginReg as="button" type="submit" disabled={disabled}>
             {loading ? "Loading..." : "Login"}
           </ButtonLoginReg>
-          <LinkReset to="/reset">
-            Have you forgotten your password? Press HERE
-          </LinkReset>
           <ButtonNav onClick={handleAnonymous}>
             Enter without logging in
           </ButtonNav>
+          <LinkReset to="/reset">
+            Have you forgotten your password? Press HERE
+          </LinkReset>
           <ToastContainer position="top-center" delay="100" />
           <BtnBack to="/" />
         </Form>
@@ -47,3 +47,4 @@ const LoginRender = () => {
 };
 
 export default LoginRender;
+
